@@ -1,0 +1,78 @@
+\begin{thebibliography}{9}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Breen et~al.(2020)Breen, Foley, Boekholt, and
+  Portegies~Zwart]{Breen2020}
+Philip~G. Breen, Christopher~N. Foley, Tjarda Boekholt, and Simon
+  Portegies~Zwart.
+\newblock {N}ewton versus the machine: solving the chaotic three-body problem
+  using deep neural networks.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  494\penalty0 (2):\penalty0 2465--2470, 2020.
+\newblock \doi{10.1093/mnras/staa713}.
+
+\bibitem[Chenciner and Montgomery(2000)]{ChencinerMontgomery2000}
+Alain Chenciner and Richard Montgomery.
+\newblock A remarkable periodic solution of the three-body problem in the case
+  of equal masses.
+\newblock \emph{Annals of Mathematics}, 152\penalty0 (3):\penalty0 881--901,
+  2000.
+\newblock \doi{10.2307/2661357}.
+
+\bibitem[Li and Liao(2017)]{LiLiao2017}
+Xiaoming Li and Shijun Liao.
+\newblock More than six hundred new families of {N}ewtonian periodic planar
+  collisionless three-body orbits.
+\newblock \emph{Science China Physics, Mechanics \& Astronomy}, 60:\penalty0
+  129511, 2017.
+\newblock \doi{10.1007/s11433-017-9078-5}.
+
+\bibitem[Li et~al.(2018)Li, Jing, and Liao]{LiJingLiao2018}
+Xiaoming Li, Yipeng Jing, and Shijun Liao.
+\newblock Over a thousand new periodic orbits of a planar three-body system
+  with unequal masses.
+\newblock \emph{Publications of the Astronomical Society of Japan}, 70\penalty0
+  (4):\penalty0 64, 2018.
+\newblock \doi{10.1093/pasj/psy057}.
+
+\bibitem[Mardling and Aarseth(2001)]{MardlingAarseth2001}
+R.~A. Mardling and S.~J. Aarseth.
+\newblock Tidal interactions in star cluster simulations.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  321\penalty0 (3):\penalty0 398--420, 2001.
+\newblock \doi{10.1046/j.1365-8711.2001.03974.x}.
+
+\bibitem[Moore(1993)]{Moore1993}
+Cristopher Moore.
+\newblock Braids in classical dynamics.
+\newblock \emph{Physical Review Letters}, 70\penalty0 (24):\penalty0
+  3675--3679, 1993.
+\newblock \doi{10.1103/PhysRevLett.70.3675}.
+
+\bibitem[Rein and Spiegel(2015)]{ReinSpiegel2015}
+Hanno Rein and David~S. Spiegel.
+\newblock {IAS15}: a fast, adaptive, high-order integrator for gravitational
+  dynamics, accurate to machine precision over a billion orbits.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  446\penalty0 (2):\penalty0 1424--1437, 2015.
+\newblock \doi{10.1093/mnras/stu2164}.
+
+\bibitem[Stone and Leigh(2019)]{StoneLeigh2019}
+Nicholas~C. Stone and Nathan W.~C. Leigh.
+\newblock A statistical solution to the chaotic, non-hierarchical three-body
+  problem.
+\newblock \emph{Nature}, 576:\penalty0 406--410, 2019.
+\newblock \doi{10.1038/s41586-019-1833-8}.
+
+\bibitem[\v{S}uvakov and Dmitra\v{s}inovi\'{c}(2013)]{SuvakovDmitrasinovic2013}
+Milovan \v{S}uvakov and Veljko Dmitra\v{s}inovi\'{c}.
+\newblock Three classes of {N}ewtonian three-body planar periodic orbits.
+\newblock \emph{Physical Review Letters}, 110\penalty0 (11):\penalty0 114301,
+  2013.
+\newblock \doi{10.1103/PhysRevLett.110.114301}.
+
+\end{thebibliography}
