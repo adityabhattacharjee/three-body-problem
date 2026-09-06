@@ -5,7 +5,7 @@ Computational investigation into two questions about the Newtonian three-body pr
 1. **Without a known periodic orbit as a seed**, can a numerical search discover a genuinely new one from scratch?
 2. **Given a target survival time**, can an initial condition be constructed or found that is guaranteed, or at least likely, to stay bound for at least that long?
 
-Full writeup: [`paper/main.pdf`](paper/main.pdf) (technical) and [`paper/companion.pdf`](paper/companion.pdf) (plain-language, no equations).
+Full writeup: [`paper/3BodyProblem.pdf`](paper/3BodyProblem.pdf) (plain-language, no equations).
 
 ## Videos
 
@@ -31,7 +31,7 @@ data/               Saved results (.npz) referenced by the paper and the figure-
 manim/              Manim scenes for the three videos above (precompute.py regenerates each
                     scene's trajectory data from research/; animation.py renders the scene)
 
-paper/              LaTeX sources for both documents, references.bib, and the figure-generation script
+paper/              LaTeX source (3BodyProblem.tex), the figure-generation script, and the compiled PDF
 ```
 
 ## Reproducing
@@ -40,7 +40,7 @@ All numerical results use `G=1` and equal unit masses. Random-seed and tolerance
 recorded in `research/notes.md`. Requires `numpy`, `scipy`, `rebound` (see notes.md for a
 packaging caveat on non-AVX-512 hardware) and, for the videos, `manim`.
 
-Every literature citation in the paper (Moore 1993, Chenciner-Montgomery 2000,
-Šuvakov-Dmitrašinović 2013, Li-Liao 2017/2018, Mardling-Aarseth 2001, Stone-Leigh 2019,
+Every literature claim referenced in developing this project (Moore 1993, Chenciner-Montgomery
+2000, Šuvakov-Dmitrašinović 2013, Li-Liao 2017/2018, Mardling-Aarseth 2001, Stone-Leigh 2019,
 Breen et al. 2020) was verified against the original source rather than recalled from memory --
 see `research/notes.md` for the verification notes and one formula correction it caught.
