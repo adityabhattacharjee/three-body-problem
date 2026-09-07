@@ -66,7 +66,7 @@ def fig_hierarchical():
         ax.set_xlabel("time (inner periods)")
     axes[0].set_ylabel("separation")
     axes[0].legend(fontsize=8, loc="upper left")
-    fig.suptitle(f"Hierarchical triple: Mardling-Aarseth critical ratio "
+    fig.suptitle(f"Hierarchical triple: known stability rule of thumb "
                  f"$\\approx${mardling_aarseth_ratio(0.5):.2f}", fontsize=11)
     fig.tight_layout()
     fig.savefig(os.path.join(FIGDIR, "fig_hierarchical.pdf"))

@@ -54,7 +54,7 @@ class MainScene(MovingCameraScene):
         title.add_updater(upd_title)
 
         crit_text = Text(
-            f"Mardling-Aarseth stability criterion:  a_out / a_in >~ {crit_ratio:.2f}",
+            f"Known stability rule of thumb:  a_out / a_in >~ {crit_ratio:.2f}",
             font_size=24, color=GRAY_B,
         )
         crit_text.next_to(title, DOWN, buff=0.3)
