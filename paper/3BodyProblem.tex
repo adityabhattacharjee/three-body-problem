@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{xcolor}
+\usepackage{natbib}
 
 \hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
 
@@ -33,6 +34,18 @@ found one single formula that predicts what three gravitating bodies will
 do far into the future, the way we can for two. In 1890, the
 mathematician Henri Poincar\'e proved that, in general, no such formula
 can exist.
+
+Two special cases were already known long before Poincar\'e's proof. In
+1767, Leonhard Euler found an exact solution in which all three bodies
+stay lined up on a single rotating straight line. In 1772, Joseph-Louis
+Lagrange found a second exact solution in which the three bodies stay at
+the corners of a rotating equilateral triangle, whatever their individual
+masses. Both are genuine, exact three-body solutions -- but Euler's
+lined-up version is always unstable, like balancing a pencil on its tip,
+while Lagrange's triangle is only stable if one of the three bodies is
+much heavier than the other two. What Poincar\'e's proof shows is that
+beyond these two special families, no single formula can cover every
+possible three-body arrangement.
 
 That does not mean three-body motion is unpredictable in every sense. A
 computer can simulate it step by step, as far forward or backward in time
@@ -64,9 +77,14 @@ very different answers.
 \section{Why three bodies are so hard to predict}
 % ======================================================================
 
-With two bodies, gravity settles into one clean repeating shape: a circle
-or an ellipse. Add a third body, and the extra tug of gravity usually
-breaks that clean pattern. The system becomes \emph{chaotic}: a tiny change
+With two bodies that are gravitationally bound to each other -- moving
+slowly enough that neither can break free of the other's pull -- gravity
+settles into one clean repeating shape: a circle or an ellipse, retraced
+forever. (If the two bodies are moving too fast to stay bound, the path
+is an open curve, a parabola or hyperbola, and they separate for good
+instead of repeating -- but bound, repeating orbits are the common case,
+and the one this project is concerned with.) Add a third body, and the
+extra tug of gravity usually breaks that clean, repeating pattern. The system becomes \emph{chaotic}: a tiny change
 in where you place one of the three bodies at the start -- a change too
 small to ever measure in real life -- can lead to a completely different
 outcome after enough time. Two nearly identical three-body systems can
@@ -113,15 +131,21 @@ over.
 One well-known repeating three-body orbit, called the \textbf{figure-eight
 orbit}, also has zero overall spin, and yet it does not collide -- the
 three bodies trace out a graceful figure-eight shape forever, chasing each
-other around the same curve. We used it to check that our simulation was
-working correctly (Figure~\ref{fig:figure8}), by measuring how precisely
-it retraces its own path -- it comes back to where it started to within
-about one part in a trillion. Finding an orbit like this from scratch,
-though, is like finding one four-leaf clover in an enormous field: it can
-be done, but researchers who have actually found new examples needed far
-more computing time than we used here, plus a clever way of first sorting
-candidates by the general shape of the path they trace, before checking
-any of them in detail.
+other around the same curve. It was first found numerically by Moore in
+1993 \citep{Moore1993}, and its existence was later proved rigorously,
+not just numerically, by Chenciner and Montgomery in 2000
+\citep{ChencinerMontgomery2000}. We used it to check that our simulation
+was working correctly (Figure~\ref{fig:figure8}), by measuring how
+precisely it retraces its own path -- it comes back to where it started
+to within about one part in a trillion. Finding an orbit like this from
+scratch, though, is like finding one four-leaf clover in an enormous
+field: it can be done, but researchers who have actually found new
+examples -- such as \v{S}uvakov and Dmitra\v{s}inovi\'{c}'s 2013 search,
+which turned up 13 new families \citep{SuvakovDmitrasinovic2013}, and Li
+and Liao's later, much larger catalogs \citep{LiLiao2017,LiJingLiao2018}
+-- needed far more computing time than we used here, plus a clever way of
+first sorting candidates by the general shape of the path they trace,
+before checking any of them in detail.
 
 \begin{figure}[htbp]
   \centering
@@ -170,7 +194,8 @@ the size of the inner pair's own little orbit.
 \end{itemize}
 
 There turns out to be a fairly simple rule of thumb, worked out by other
-scientists and confirmed again in this project, for exactly how far away
+scientists \citep{MardlingAarseth2001} and confirmed again in this
+project, for exactly how far away
 is ``far enough'' to guarantee the tight pair survives. That means we did
 not have to search or guess: we could simply calculate the right spacing
 in advance, build the system that way, and it worked exactly as predicted
@@ -251,5 +276,8 @@ see which ones survive.
 
 All of the code is available at
 \url{https://github.com/adityabhattacharjee/three-body-problem}.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
 
 \end{document}
